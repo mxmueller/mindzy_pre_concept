@@ -65,8 +65,6 @@ class ChatBase extends Controller
         //     true
         // ]));
 
-        dd(DB::connection('mongodb')->collection('asdfasdf')
-        ->insert(['test' => 'testst']));
 
     }
     /**
