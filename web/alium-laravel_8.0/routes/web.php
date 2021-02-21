@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Playground\MongoPlayground;
+use App\Http\Controllers\Concepts\ChatBase;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,6 +19,11 @@ Route::get('/', function () {
 });
 
 
-Route::get('/chatroom/single', function () {
-    return view('chatroom.single');
-});
+// ANCHOR
+// database check / dependency test's
+Route::get('/mongo_dependencies_check', [ChatBase::class, 'store']);
+// dev
+
+// Route::resource('books','chatAppConcersationTestController');
+
+// Route::resource('student',StudentController::class);
