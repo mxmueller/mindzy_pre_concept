@@ -17,6 +17,7 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "mongodb/mongodb": "1.6",
+        "predis/predis": "^1.1",
         "pusher/pusher-php-server": "~3.0"
     },
     "require-dev": {

@@ -15,7 +15,6 @@ class CollectionHandle extends Controller
     }
 
     public function submitCollection() {
-
         $this->MongoDBCollectionSubmit();
     }
 }
